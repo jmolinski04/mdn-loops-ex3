@@ -12,6 +12,13 @@ function isPrime(num) {
 }
 
 // Add your code here
+for (i = 500; i >= 2; i--) {
+  if (!isPrime(i)) {
+    continue;
+  } else {
+    para.textContent += `${i} `;
+  }
+}
 
 // Don't edit the code below here!
 const section = document.querySelector("section");
